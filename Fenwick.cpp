@@ -23,6 +23,8 @@ class fenwick{
 		}
 
 		int getsum(int l,int r){
+		    if(r < l)
+			    return 0;
 		    return sum(r)-sum(l-1);
 		}
 
